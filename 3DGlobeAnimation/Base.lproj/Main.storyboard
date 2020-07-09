@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WorlRotaionAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sky" translatesAutoresizingMaskIntoConstraints="NO" id="K9i-uZ-b2r">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NFC-Qm-YcI">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wn9-Ps-2DT" userLabel="vwImgContainer">
+                                        <rect key="frame" x="-300" y="0.0" width="600" height="300"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="worldMap" translatesAutoresizingMaskIntoConstraints="NO" id="GBd-69-b50">
+                                                <rect key="frame" x="300" y="0.0" width="300" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="Tu0-RV-Md1"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="worldMap" translatesAutoresizingMaskIntoConstraints="NO" id="bE7-51-wZJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="600" id="0Iu-Cb-Xrw"/>
+                                            <constraint firstAttribute="bottom" secondItem="GBd-69-b50" secondAttribute="bottom" id="13W-8e-5CQ"/>
+                                            <constraint firstItem="GBd-69-b50" firstAttribute="centerY" secondItem="Wn9-Ps-2DT" secondAttribute="centerY" id="2wH-e8-GV7"/>
+                                            <constraint firstAttribute="trailing" secondItem="GBd-69-b50" secondAttribute="trailing" id="3A6-Bo-7kh"/>
+                                            <constraint firstAttribute="bottom" secondItem="bE7-51-wZJ" secondAttribute="bottom" id="FX5-ZF-JwP"/>
+                                            <constraint firstItem="bE7-51-wZJ" firstAttribute="leading" secondItem="Wn9-Ps-2DT" secondAttribute="leading" id="LxS-uD-z7S"/>
+                                            <constraint firstItem="GBd-69-b50" firstAttribute="leading" secondItem="bE7-51-wZJ" secondAttribute="trailing" id="WAW-TJ-lih"/>
+                                            <constraint firstItem="bE7-51-wZJ" firstAttribute="centerY" secondItem="Wn9-Ps-2DT" secondAttribute="centerY" id="WIR-Mi-y5T"/>
+                                            <constraint firstItem="GBd-69-b50" firstAttribute="top" secondItem="Wn9-Ps-2DT" secondAttribute="top" id="nV8-6n-vNT"/>
+                                            <constraint firstItem="bE7-51-wZJ" firstAttribute="top" secondItem="Wn9-Ps-2DT" secondAttribute="top" id="yOG-el-QRd"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="CDS-hl-Oal"/>
+                                    <constraint firstAttribute="height" constant="300" id="Lpl-SO-SWn"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wn9-Ps-2DT" secondAttribute="bottom" id="Psd-k5-8Hs"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wn9-Ps-2DT" secondAttribute="trailing" id="lLK-3e-UjV"/>
+                                    <constraint firstItem="Wn9-Ps-2DT" firstAttribute="top" secondItem="NFC-Qm-YcI" secondAttribute="top" id="u2H-Da-MIu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="NFC-Qm-YcI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6G3-bQ-4D7"/>
+                            <constraint firstItem="NFC-Qm-YcI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ihu-R4-tsy"/>
+                            <constraint firstItem="K9i-uZ-b2r" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="M5c-pG-UnL"/>
+                            <constraint firstItem="K9i-uZ-b2r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UIM-HE-eSs"/>
+                            <constraint firstAttribute="bottom" secondItem="K9i-uZ-b2r" secondAttribute="bottom" id="p8B-xA-n3B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K9i-uZ-b2r" secondAttribute="trailing" id="tMm-na-ehx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgFirst" destination="GBd-69-b50" id="lyn-hq-BGy"/>
+                        <outlet property="tempView" destination="NFC-Qm-YcI" id="Q5N-fk-brB"/>
+                        <outlet property="tempVwHeight" destination="Lpl-SO-SWn" id="yQt-Va-GUj"/>
+                        <outlet property="vwImgContainer" destination="Wn9-Ps-2DT" id="fz5-qR-UDN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="101.78571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sky" width="1816" height="1136"/>
+        <image name="worldMap" width="640" height="320"/>
+    </resources>
+</document>
