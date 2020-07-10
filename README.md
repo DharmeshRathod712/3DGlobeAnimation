@@ -8,7 +8,9 @@ Some of the features used in this project
 * ```CAGradientLayer``` for applying gradient effect to the shape layer
 * ```CGAffineTransform``` for animating (translating) the UIView
 
-> Complete article caan be found on [medium](https://medium.com/dev-genius/swift-3d-looking-animated-globe-with-calayer-307942174caf)
+
+> Read complete article on [medium](https://medium.com/dev-genius/swift-3d-looking-animated-globe-with-calayer-307942174caf)
+
 
 # Final Output looks something like below .gif
 
