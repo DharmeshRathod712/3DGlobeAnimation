@@ -59,8 +59,8 @@ class ViewController: UIViewController {
          brightness - in percentage 1 = 100%
          alpha - transparency 1 = 100% means non transparent
          */
-        gradient.colors = [UIColor.clear.cgColor, UIColor(hue: 0.60 , saturation: 1, brightness: 0.90, alpha: 0.7).cgColor]
-        gradient.locations = [0, 0.7]
+        gradient.colors = [UIColor.clear.cgColor, UIColor(hue: 0.60 , saturation: 1, brightness: 0.90, alpha: 0.5).cgColor]
+        gradient.locations = [0, 0.5]
         tempView.layer.addSublayer(gradient)
         
         animateTheWorld()
